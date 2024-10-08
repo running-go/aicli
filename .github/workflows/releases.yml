@@ -16,10 +16,11 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.github_token }}
           output-file: "false"
           skip-commit: "true"
           create-summary: 'true'
+          skip-on-empty: "false"
       - name: Print the tag value
         run: echo "The tag value is:${{ steps.changelog.outputs.tag }}"
     outputs:
