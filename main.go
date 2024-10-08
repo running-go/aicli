@@ -16,6 +16,13 @@ func main() {
 		return
 	}
 
+	//cohereAPIKey := os.Getenv("COHERE_API_KEY")
+	//
+	//if cohereAPIKey == "" {
+	//	fmt.Println("Please set the COHERE_API_KEY environment variable. Check the README for more information.")
+	//	return
+	//}
+
 	// Execute the root command
 	cmd.Execute()
 

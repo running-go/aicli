@@ -12,7 +12,7 @@ func printLogo() {
 	if runtime.GOOS == "windows" {
 		figletColoured = aec.YellowF.Apply(figletStr)
 	}
-	fmt.Printf(figletColoured)
+	fmt.Println(figletColoured)
 }
 
 const figletStr = `  ___                   _____           ____

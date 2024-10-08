@@ -28,10 +28,6 @@ func Execute() {
 
 }
 
-func runCli(cmd *cobra.Command, args []string) {
-	printLogo()
-}
-
 func init() {
 	rootCmd.AddCommand(genCmd)
 }
