@@ -16,7 +16,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5
         with:
-          github-token: ${{ secrets.github_token }}
+          github-token: ${{ secrets.GORUN_TOKEN }}
           output-file: "false"
           skip-commit: "true"
           create-summary: 'true'
