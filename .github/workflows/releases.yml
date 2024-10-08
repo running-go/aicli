@@ -16,7 +16,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5
         with:
-          github-token: ${{ secrets.PA_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           output-file: "false"
           skip-commit: "true"
           create-summary: 'true'
