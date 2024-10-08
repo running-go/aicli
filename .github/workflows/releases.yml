@@ -20,6 +20,8 @@ jobs:
           output-file: "false"
           skip-commit: "true"
           create-summary: 'true'
+      - name: Print the tag value
+        run: echo "The tag value is:${{ steps.changelog.outputs.tag }}"
     outputs:
       tag: ${{ steps.changelog.outputs.tag }}
 
