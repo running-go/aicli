@@ -33,6 +33,9 @@ jobs:
     name: GoReleaser
     runs-on: ubuntu-latest
     needs: create-tag
+    permissions:
+      packages: write
+      contents: write
     # only run if the tag is not empty
     if: ${{ needs.create-tag.outputs.tag != '' }}
     steps:
