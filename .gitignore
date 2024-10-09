@@ -28,3 +28,4 @@ go.work.sum
 *.iml
 aicli
 .env
+.DS_Store
